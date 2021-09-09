@@ -27,7 +27,8 @@ The solution should consist of the following:
 
           customer_id, conversion_probability 
    
-     The model needs to consider only those customers who visited our website within the last 48 hours.
+     The model needs to consider only those customers who visited our 
+     website within the last 48 hours.
 </pre>
 3. An evaluation report showing at least 50% increase in the conversions when compared with the baseline model (over a period of 7 days).
 
