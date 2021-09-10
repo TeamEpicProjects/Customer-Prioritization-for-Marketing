@@ -12,5 +12,5 @@ PyCharm 2021+
     seaborn 1.1+
     sklearn 0.23+
     joblib 0.15+
-		imblearn 0.7+
+    imblearn 0.7+
 </pre>
