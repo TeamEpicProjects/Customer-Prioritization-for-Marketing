@@ -58,7 +58,7 @@ Each project participant would be assessed and awarded a score based on the foll
 </pre>
 
 ## Project Members
-
-Owner                       : <a href="https://github.com/rutuja027">Rutuja Yerunkar</a>
-Lead / Instructor           : <a href="https://github.com/ngkpg">Neeraj Garg</a>
-Data Scientists / Developers: <a href="https://github.com/vvenkataravindra">Ravindra VV</a>, <a href="https://github.com/reetbatra">Reet Batra</a>, <a href="https://github.com/rvs-23">Rishav Sharma</a>, <a href="https://github.com/sanyamgoel10">Sanyam Goel</a>
+  
+Owner                       : <a href="https://github.com/rutuja027">Rutuja Yerunkar</a>  
+Lead / Instructor           : <a href="https://github.com/ngkpg">Neeraj Garg</a>  
+Data Scientists / Developers: <a href="https://github.com/vvenkataravindra">Ravindra VV</a>, <a href="https://github.com/reetbatra">Reet Batra</a>, <a href="https://github.com/rvs-23">Rishav Sharma</a>, <a href="https://github.com/sanyamgoel10">Sanyam Goel</a>  
