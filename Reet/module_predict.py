@@ -4,6 +4,7 @@
 import joblib
 import csv
 import datetime
+from sklearn.preprocessing import StandardScaler
 
 def predict_cp(data_stream, prediction_date):
     """
@@ -15,10 +16,12 @@ def predict_cp(data_stream, prediction_date):
     # importing the model, change the name if required
 
     df_input = data_stream.get_data(prediction_date)
-    model = joblib.load('cp_model.pkl')
-    X = df_input.drop(columns=['date', 'email', 'conversion_status'])
+    model = joblib.load('sdc_fs1_s_jlib.pkl')
 
-    # drop other columns if reqd and apply any reqd transformations to X
+    #
+
+    X = df_input.drop(columns=['date', 'email', 'conversion_status', 'nunique_device', 'nunique_report_type', 'nunique_language', 'nunique_dob', 'nunique_gender', 'count_sessions'])
+    X_scaled = StandardScaler().fit_transform(X)
 
     y_hat = model.predict_proba(X)
 
@@ -36,11 +39,9 @@ def predict_cp(data_stream, prediction_date):
     df_prediction_report = df_prediction_report.iloc[:250, :]
 
     filename_prediction_report = 'prediction_report_' + datetime.datetime.strftime(prediction_date, '%Y%m%d') + '.csv'
-    
+
     df_prediction_report.to_csv(filename_prediction_report, encoding='utf-8', index=False, qouting=csv.QUOTE_ALL)
-    
+
     return df_prediction_report
-
-
 
 
