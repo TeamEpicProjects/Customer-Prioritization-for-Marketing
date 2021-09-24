@@ -2,6 +2,8 @@
 # customers that are interested to buy the premium services based on various factors
 
 import joblib
+import csv
+import datetime
 
 def predict_cp(data_stream, prediction_date):
     """
@@ -33,7 +35,9 @@ def predict_cp(data_stream, prediction_date):
 
     df_prediction_report = df_prediction_report.iloc[:250, :]
 
-    filename_prediction_report = final_report + prediction_date
+    filename_prediction_report = 'prediction_report_' + datetime.datetime.strftime(prediction_date, '%Y%m%d') + '.csv'
+    
+    df_prediction_report.to_csv(filename_prediction_report, encoding='utf-8', index=False, qouting=csv.QUOTE_ALL)
     
     return df_prediction_report
 
