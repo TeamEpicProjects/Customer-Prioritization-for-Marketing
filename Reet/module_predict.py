@@ -33,6 +33,8 @@ def predict_cp(data_stream, prediction_date):
 
     df_prediction_report = df_prediction_report.iloc[:250, :]
 
+    filename_prediction_report = final_report + prediction_date
+    
     return df_prediction_report
 
 
