@@ -40,7 +40,7 @@ def predict_cp(data_stream, prediction_date):
 
     filename_prediction_report = 'prediction_report_' + datetime.datetime.strftime(prediction_date, '%Y%m%d') + '.csv'
 
-    df_prediction_report.to_csv(filename_prediction_report, encoding='utf-8', index=False, qouting=csv.QUOTE_ALL)
+    df_prediction_report.to_csv(filename_prediction_report, encoding='utf-8', index=False, quoting=csv.QUOTE_ALL)
 
     return df_prediction_report
 
