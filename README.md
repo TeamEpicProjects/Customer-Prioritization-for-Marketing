@@ -28,7 +28,7 @@ The solution should consist of the following:
           customer_id, conversion_probability 
    
      The model needs to consider only those customers who visited our 
-     website within the last 48 hours.
+     website within the last 24 hours.
 </pre>
 3. An evaluation report showing at least 50% increase in the conversions when compared with the baseline model (over a period of 7 days).
 
@@ -61,7 +61,7 @@ Each project participant would be assessed and awarded a score based on the foll
   
 Owner                       : <a href="https://github.com/rutuja027">Rutuja Yerunkar</a>  
 Lead / Instructor           : <a href="https://github.com/ngkpg">Neeraj Garg</a>  
-Data Scientists / Developers: <a href="https://github.com/vvenkataravindra">Ravindra VV</a>, <a href="https://github.com/reetbatra">Reet Batra</a>, <a href="https://github.com/rvs-23">Rishav Sharma</a>, <a href="https://github.com/sanyamgoel10">Sanyam Goel</a>  
+Data Scientists / Developers: <a href="https://github.com/reetbatra">Reet Batra</a>, <a href="https://github.com/rvs-23">Rishav Sharma</a>
 
 ## Live Demo 
 
